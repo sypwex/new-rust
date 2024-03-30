@@ -1,0 +1,26 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+        // {
+        // 	"match": "nom-ex\\.*",
+        // 	"cmd": "cargo run",
+        // },
+        // {
+        // 	"match": "\\.rs$",
+        // 	"cmd": "cargo run",
+        // },
+        // {
+        // 	"match": "nom-ex/.*.rs$",
+        // 	"cmd": "./run.sh",
+        // },
+        // {
+        // 	"notMatch": "nom-ex/.*.rs$",
+        // 	"cmd": "echo ${file}",
+        // },
+        {
+          "match": "src/.*.rs$",
+          "cmd": "cargo build && cargo run",
+        },
+    ]
+  },
+}
